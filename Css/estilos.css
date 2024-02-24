@@ -1,0 +1,55 @@
+.css_body_background{
+    background-color: #fff;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    background-image: url("../img/fondo.jpg");
+    overflow-y: auto;
+}
+.css_background {
+    background:none;
+}
+.css_contendor_image{
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+.css_contendor_titulo{
+    text-align: center;
+    align-items: center;
+}
+.css_title_page{
+    text-align: center;
+    color: #fff;
+    width: 50%;
+    margin:  0 auto;
+}
+.css_image{
+    width: 20%;
+    height: 20%;
+    border-radius: 50% 50%;
+    float: left;
+    margin-left: 23%;
+    border: 2px solid #ffff;
+}
+.boton_ver_mas {
+	background:linear-gradient(to bottom, #f0a8e2 5%, #c128c9 100%);
+	background-color:#f0a8e2;
+	border-radius:10px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:'Times New Roman', Times, serif;
+	font-size:21px;
+	padding:17px 76px;
+	text-decoration:none;
+}
+.boton_ver_mas:hover {
+	background:linear-gradient(to bottom, #c128c9 5%, #f0a8e2 100%);
+	background-color:#c128c9;
+}
+.boton_ver_mas:active {
+	position:relative;
+	top:1px;
+}
