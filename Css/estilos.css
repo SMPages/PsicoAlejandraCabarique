@@ -1,14 +1,98 @@
-.css_body_background{
-    background-color: #fff;
-    width: 100%;
-    min-height: 100%;
-    overflow-x: hidden;
-    background-image: url("../img/fondo.jpg");
-    overflow-y: auto;
+body{
+    margin: 0 !important;
+    background-color: #5f9ea0;
 }
-.css_background {
-    background:none;
+/*Css moviles*/
+.css_background{
+    background-color: #5f9ea0;
 }
+.css_image{
+    border-radius: 50% 50%;
+    width: 50%;
+    border: 2px solid #ffffff;
+}
+.css_title_movil {
+    padding-top: 20px !important;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 27px;
+}
+.css_contenido_movil_index{ 
+    padding-top: 10px;
+    text-align: center;
+}
+.css_icon_movil{
+    margin-right: 4px;
+}
+.boton_agendar_cita {
+	background-color:#088839;
+	border-radius:10px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:'Times New Roman', Times, serif;
+	font-size:21px;
+	padding:17px 76px;
+	text-decoration:none;
+    margin-top: 15px;
+    min-width: 80%;
+    max-width: 80%;
+}
+.boton_agendar_cita:hover {
+	background-color:#088839;
+}
+.boton_agendar_cita:active {
+	position:relative;
+	top:1px;
+}   
+
+.boton_ver_mas {
+	background:linear-gradient(to bottom, #a3fd2d 5%, #09c009 100%);
+	background-color:#088839;
+	border-radius:10px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:'Times New Roman', Times, serif;
+	font-size:21px;
+	padding:17px 76px;
+	text-decoration:none;
+    animation: moverBoton 2s infinite; /* Aplicar la animación */
+    margin-top: 15px;
+    min-width: 80%;
+    max-width: 80%;
+}
+.boton_ver_mas:hover {
+	background:linear-gradient(to bottom, #006800 5%, #a3fd2d 100%);
+	background-color:#088839;
+}
+
+footer {
+    padding: 20px; /* Espaciado interno del footer */
+    margin-top: auto; /* Coloca el footer al final de la página */
+  }
+@keyframes moverBoton {
+    0% {
+      transform: translateX(0); /* Posición inicial */
+    }
+    50% {
+      transform: translateX(10px); /* Movimiento a la derecha */
+    }
+    100% {
+      transform: translateX(0); /* Regreso a la posición inicial */
+    }
+  }
+
+  
+.boton_ver_mas:active {
+	position:relative;
+	top:1px;
+}   
 .css_contendor_image{
     width: auto;
     height: auto;
@@ -24,32 +108,46 @@
     width: 50%;
     margin:  0 auto;
 }
-.css_image{
-    width: 20%;
-    height: 20%;
-    border-radius: 50% 50%;
-    float: left;
-    margin-left: 23%;
-    border: 2px solid #ffff;
+
+.imagen_contenida {
+    width: 70%; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+    height: auto; /* Ajusta la altura de la imagen automáticamente para mantener la proporción */
+  }
+
+.css_contendor_principal{
+    width: 100%;
 }
-.boton_ver_mas {
-	background:linear-gradient(to bottom, #f0a8e2 5%, #c128c9 100%);
-	background-color:#f0a8e2;
-	border-radius:10px;
-	border:1px solid #ffffff;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:'Times New Roman', Times, serif;
-	font-size:21px;
-	padding:17px 76px;
-	text-decoration:none;
+.css_host_derecha{
+    width: 49% !important;
+    display: inline-block;
 }
-.boton_ver_mas:hover {
-	background:linear-gradient(to bottom, #c128c9 5%, #f0a8e2 100%);
-	background-color:#c128c9;
+.css_host_izquierda{
+    width: 49% !important;
+    display: inline-block;
 }
-.boton_ver_mas:active {
-	position:relative;
-	top:1px;
-}
+
+/* En el archivo estilos.css */
+
+.contenedor {
+    display: flex;
+    background-color: #EEEFF0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-radius: 0px !important;
+  }
+  
+  .imagen {
+    width: 40%; /* El 30% del ancho de la página */
+    border-right: 2px solid #ffffff;
+  }
+  
+  .imagen img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Se ajusta la altura automáticamente para mantener la proporción */
+;
+  }
+  
+  .contenido {
+    width: 60%; /* El 70% del ancho de la página */
+    padding: 0 20px; /* Añade un poco de espacio alrededor del contenido */
+  }

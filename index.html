@@ -1,24 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/estilos.css"> 
-    <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página</title>
+  <link rel="stylesheet" href="Css/estilos.css"> 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="Js/script.js"></script>
 </head>
-<body class="css_body_background">
-    <div class="css_background">  
+<body>
+  <div class="contenedor">
+    <div id="contenidoMovil" style="display: none;">
+      <!-- Contenido para dispositivos móviles -->
+      <div class="css_background">  
         <div class="css_contendor_titulo"> 
-            <h1 class="css_title_page">"De reprimida a liberada a través del antídoto al bloqueo emocional"</h1>
+            <h1 class="css_title_movil">"De reprimida a liberada en 90 dias a través del antídoto al bloqueo emocional"</h1>
         </div>
         <div class="css_contendor_image">      
-              <img class="css_image" src="img/perfil.jpg" alt="Descripción de la imagen">
-              <h1>Mi nombre es Maria Alejandra Cabarique</h1>
-              <p>Soy psicologa y una amante inpedernida de los libros</p>
-              <button id="miBoton" class="boton_ver_mas" onclick="alert('Has hecho clic en el botón')">Conoce mi metodo</button>
-
+            <img class="css_image" src="img/perfil.jpg" alt="Descripción de la imagen">
+        </div>
+        <div class="css_contenido_movil_index"> 
+            <h1 class="css_title_movil">Psic. Maria Alejandra Cabarique</h1>
+            <button id="miBoton" class="boton_ver_mas" onclick="VerMasBotonRegistrarse()"><i class="material-icons css_icon_movil">how_to_reg</i>Accede a mi metodo GRATIS</button>
+            <button id="btn_whatsapp"  class="boton_agendar_cita" onclick = "RedirigirWhatsApp()"><i class="fab fa-whatsapp css_icon_movil"></i>Agendar cita</button>        
         </div>
     </div>
-    
+    </div>
+    <div id="contenidoDesktop" style="display: none;">
+      <!-- Contenido para computadoras de escritorio -->
+      <div class="contenedor">
+        <div class="imagen">
+            <img class="imagen_contenida" src="img/perfil.jpg" alt="Descripción de la imagen">
+        </div>
+        <div class="contenido">
+            <h1 class="css_title_page">"De reprimida a liberada a través del antídoto al bloqueo emocional"</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec justo vitae sapien condimentum sagittis. Quisque id suscipit ante. Donec convallis eros at odio malesuada, ac aliquam nunc laoreet. Duis ultricies, ligula non tempus varius, leo purus bibendum mi, eget cursus arcu lorem nec nisi.</p>
+          <!-- Más contenido aquí -->
+          <button id="miBoton" class="boton_ver_mas" onclick="VerMasBotonRegistrarse()">Conoce mi metodo</button>
+        </div>
+    </div>
+    </div>
+  </div>
+
+  <script>
+    // Función para mostrar u ocultar contenido según el dispositivo
+    function mostrarContenidoSegunDispositivo() {
+      var contenidoMovil = document.getElementById('contenidoMovil');
+      var contenidoDesktop = document.getElementById('contenidoDesktop');
+
+      // Verificar si el ancho de la ventana es menor o igual a 768px (típico de dispositivos móviles)
+      if (window.innerWidth <= 768) {
+        contenidoMovil.style.display = 'block'; // Mostrar contenido para móviles
+      } else {
+        contenidoDesktop.style.display = 'block'; // Mostrar contenido para escritorio
+      }
+    }
+
+    // Ejecutar la función al cargar la página y al cambiar el tamaño de la ventana
+    window.onload = mostrarContenidoSegunDispositivo();
+  </script>
+    <footer style="text-align: center; color: #fff;">
+        <p>© 2024 SM. Todos los derechos reservados.</p>
+        <p>Politica de tratamiento de datos</p>
+      </footer>
 </body>
 </html>
