@@ -3,66 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página</title>
+  <title>MARIA ALEJANDRA CABARIQUE</title>
   <link rel="stylesheet" href="Css/estilos.css"> 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <script src="Js/script.js"></script>
-</head>
-<body>
-  <div class="contenedor">
-    <div id="contenidoMovil" style="display: none;">
-      <!-- Contenido para dispositivos móviles -->
-      <div class="css_background">  
-        <div class="css_contendor_titulo"> 
-            <h1 class="css_title_movil">"De reprimida a liberada en 90 dias a través del antídoto al bloqueo emocional"</h1>
-        </div>
-        <div class="css_contendor_image">      
-            <img class="css_image" src="img/perfil.jpg" alt="Descripción de la imagen">
-        </div>
-        <div class="css_contenido_movil_index"> 
-            <h1 class="css_title_movil">Psic. Maria Alejandra Cabarique</h1>
-            <button id="miBoton" class="boton_ver_mas" onclick="VerMasBotonRegistrarse()"><i class="material-icons css_icon_movil">how_to_reg</i>Accede a mi metodo GRATIS</button>
-            <button id="btn_whatsapp"  class="boton_agendar_cita" onclick = "RedirigirWhatsApp()"><i class="fab fa-whatsapp css_icon_movil"></i>Agendar cita</button>        
-        </div>
-    </div>
-    </div>
-    <div id="contenidoDesktop" style="display: none;">
-      <!-- Contenido para computadoras de escritorio -->
-      <div class="contenedor">
-        <div class="imagen">
-            <img class="imagen_contenida" src="img/perfil.jpg" alt="Descripción de la imagen">
-        </div>
-        <div class="contenido">
-            <h1 class="css_title_page">"De reprimida a liberada a través del antídoto al bloqueo emocional"</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec justo vitae sapien condimentum sagittis. Quisque id suscipit ante. Donec convallis eros at odio malesuada, ac aliquam nunc laoreet. Duis ultricies, ligula non tempus varius, leo purus bibendum mi, eget cursus arcu lorem nec nisi.</p>
-          <!-- Más contenido aquí -->
-          <button id="miBoton" class="boton_ver_mas" onclick="VerMasBotonRegistrarse()">Conoce mi metodo</button>
-        </div>
-    </div>
-    </div>
-  </div>
-
-  <script>
-    // Función para mostrar u ocultar contenido según el dispositivo
-    function mostrarContenidoSegunDispositivo() {
-      var contenidoMovil = document.getElementById('contenidoMovil');
-      var contenidoDesktop = document.getElementById('contenidoDesktop');
-
-      // Verificar si el ancho de la ventana es menor o igual a 768px (típico de dispositivos móviles)
-      if (window.innerWidth <= 768) {
-        contenidoMovil.style.display = 'block'; // Mostrar contenido para móviles
-      } else {
-        contenidoDesktop.style.display = 'block'; // Mostrar contenido para escritorio
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    /* Estilos para dispositivos móviles */
+    @media only screen and (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+      .column {
+        width: 100%;
       }
     }
+    /* Estilos para computadoras */
+    @media only screen and (min-width: 601px) {
+      .container {
+        padding: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .column {
+        float: left;
+        width: 50%;
+      }
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    }
+    /* Estilos comunes */
+    .header {
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      padding-bottom: 0px;
+    }
+    .content {
+      padding: 20px;
+    }
+    .footer {
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
 
-    // Ejecutar la función al cargar la página y al cambiar el tamaño de la ventana
-    window.onload = mostrarContenidoSegunDispositivo();
-  </script>
-    <footer style="text-align: center; color: #fff;">
-        <p>© 2024 SM. Todos los derechos reservados.</p>
+<div class="header">
+    <h1 class="css_title_movil">"De reprimida a liberada en 90 dias a través del antídoto al bloqueo emocional"</h1>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="column">
+      <div class="content">
+        <div class="css_contendor_image">      
+            <img class="css_image" src="img/perfil.jpg" alt="Descripción de la imagen">
+            <h3 class="css_nombre_text">ALEJANDRA CABARIQUE</h3>
+            <h6 class="css_profesion_text">Psicóloga</h6>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <div class="button-container">
+            <button id="btn_master_class" class="boton_registrar_master_class" onclick="AbrirModalRegistro()"><i class="material-icons css_icon_movil">how_to_reg</i>Accede GRATIS</button>
+            <button id="btn_whatsapp"  class="boton_generico_page" onclick="AbrirModalRegistro()"><i class="fab fa-whatsapp css_icon_movil"></i>Agendar cita</button>        
+            <button id="btn_whatsapp"  class="boton_generico_page" onclick = "RedirigirWhatsApp()"><i class="fab fa-whatsapp css_icon_movil"></i>Agendar cita</button>        
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+    <p>© 2024 SM. Todos los derechos reservados.</p>
         <p>Politica de tratamiento de datos</p>
-      </footer>
+</div>
+
+<div id="ModalRegistro" class="modal">
+    <div class="modal-content">
+        <span onclick="CerrarModal()" class="close">&times;</span>
+        <div id="mc_embed_signup">
+            <form action="https://github.us18.list-manage.com/subscribe/post?u=c93e70e597d944d6f8a355cca&amp;id=f8ffdd478a&amp;v_id=4646&amp;f_id=008dcbe0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                <div id="mc_embed_signup_scroll"><h2>Suscríbete y conoce mi método. </h2>
+                    <div class="indicates-required"><span class="asterisk">*</span>Campo requerido</div>
+                    <div class="mc-field-group">
+                        <input type="text" name="FNAME" placeholder="¿Como te llamas?" class=" text" id="mce-FNAME" value=""></div><div class="mc-field-group"><label for="mce-EMAIL">Dirección de correo electrónico <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div><div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group"><div class="content__gdpr"><label>Autorización de tratamiento de datos:</label><p> </p>
+                        <fieldset class="mc_fieldset gdprRequired mc-field-group" name="interestgroup_field"><label class="checkbox subfield" for="gdpr94357"><input type="checkbox" id="gdpr_94357" name="gdpr[94357]" class="gdpr" value="Y"><span>Acepto el envio de información y notificaciones de nuevas MasterClass</span></label></fieldset><p>Política de Tratamiento de Datos Personales</p></div><div class="content__gdprLegal"></div></div>
+                <div id="mce-responses" class="clear foot">
+                    <div class="response" id="mce-error-response" style="display: none;"></div>
+                    <div class="response" id="mce-success-response" style="display: none;"></div>
+                </div>
+            <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                <input type="text" name="b_c93e70e597d944d6f8a355cca_f8ffdd478a" tabindex="-1" value="">
+            </div>
+                <div class="optionalParent">
+                    <div class="clear foot">
+                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Ver MasterClass">
+                    </div>
+                </div>
+            </div>
+        </form>
+        </div>
+        <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>      
+    
+    </div>
+  </div>
 </body>
 </html>
