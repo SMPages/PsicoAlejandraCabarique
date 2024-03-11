@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MARIA ALEJANDRA CABARIQUE</title>
+  <link rel="stylesheet" href="Css/estilos.css"> 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="Js/script.js"></script>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .video-container {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+    /* Estilos para dispositivos móviles */
+    @media only screen and (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+      .column {
+        width: 100%;
+      }
+    }
+    /* Estilos para computadoras */
+    @media only screen and (min-width: 601px) {
+      .container {
+        padding: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .column {
+        float: left;
+        width: 50%;
+      }
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    }
+    /* Estilos comunes */
+    .header {
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      padding-bottom: 0px;
+    }
+    .content {
+      padding: 20px;
+    }
+    .footer {
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="css_title_movil">"De reprimida a liberada en 90 dias a través del antídoto al bloqueo emocional"</h1>
+    </div>
+    <div class="container">
+    <div class="row">
+        <div class="column">
+            <div class="video-container">
+                <video controls>
+                <source src="https://drive.google.com/file/d/1G3M1n8n7mBfuL7Y2KNh6kF4H2Q3imne5/view?usp=drivesdk" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+        </div>
+        <div class="column">
+        <div class="content">
+            <div class="button-container">
+                <button id="btn_whatsapp"  class="boton_generico_page" onclick = "RedirigirWhatsApp()"><i class="fab fa-whatsapp css_icon_movil"></i>Agendar cita</button>        
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <p>© 2024 SM. Todos los derechos reservados.</p>
+            <p>Politica de tratamiento de datos</p>
+    </div>
+
+</body>
+</html>
