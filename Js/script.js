@@ -19,9 +19,7 @@
 //         console.error('Error:', error);
 //       });
 //   }
-//   function RedirigirWhatsApp(){
-//     window.location.href = 'https://api.whatsapp.com/send?phone=573167711746&text=Hola, ¿deseo agendar una video consulta?';
-//   }
+
 //   function VolverIndex() {  
 //     fetch('index.html')
 //       .then(response => {
@@ -96,3 +94,6 @@ function CerrarModal(){
   let modal = document.getElementById('ModalRegistro');
   modal.style.display = "none";
 }
+  function RedirigirWhatsApp(){
+    window.location.href = 'https://api.whatsapp.com/send?phone=573167711746&text=Hola, ¿deseo agendar una video consulta?';
+  }

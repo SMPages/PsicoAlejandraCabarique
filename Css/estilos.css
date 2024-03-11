@@ -40,6 +40,24 @@ body{
 .css_icon_movil{
     margin-right: 4px;
 }  
+.boton_modal {
+    color: #DCCAC9;
+    background-color: #504545;
+    border-radius: 11px;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    line-height: 41px;
+    text-decoration: none;
+    margin-top: 15px;
+    min-width: 80%;
+}
+.boton_modal:hover {
+  background-color: #DCCAC9;
+  color: #504545;
+}
 
 .boton_registrar_master_class {
   color: #504545;
@@ -165,6 +183,8 @@ footer {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    margin-top: 50%;
+    border-radius: 15px;
   }
   .close {
     color: #aaa;
@@ -177,4 +197,52 @@ footer {
     color: black;
     text-decoration: none;
     cursor: pointer;
+  }
+  .css_titulo_modal{
+    text-align: center;
+
+  }
+  .css_input_modal {
+    width: 90%;
+    height: 35px;
+    background-color: #DCCAC9;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px solid #504545;
+    color: #504545;
+    margin-bottom: 12px;
+  }
+  .css_mensaje_obligatorio {
+    text-align: right;
+    width: 90%;
+    font-size: 12px;
+    color: #d70404;
+    opacity: 0.9;
+  }
+  .label_input {
+    color: #5b5858;
+    font-size: 15px;
+  }
+  .css_titulo_atd {
+    color: #5b5858;
+  }
+  .gdpr{
+    width: 20px;
+    height: 20px;
+  }
+  .css_campo_selector {
+    border: 0px;
+  }
+  .gdpr_span {
+    color: #393737;
+    padding-left: 15px;
+    font-size: 16px;
+    font-style: italic;
+  }
+  .css_link_politicas{
+    font-style: italic;
+    font-size: 11px;
+    color: #ff2929;
+    border-bottom: 1px solid;
+    width: fit-content;
   }
